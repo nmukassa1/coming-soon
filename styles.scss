@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 4px;
+}
+
+body{
+    height: 100vh;
+    text-align: center;
+    background-image: url(./salvador-escalante-EfjlkpoGjs4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+button, #submit{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+header{
+    margin-top: 3rem;
+    h2{
+        font-size: .6rem;
+        margin-top: .5rem;
+    }
+}
+
+#countdown{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    .count{
+        font-size: 1.2rem;
+    }
+}
+
+
+button{
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+
+
+#modal{   
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background: hsla(0, 0%, 0%, 0.5);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+    #close{
+        height: fit-content;
+        margin: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    form{
+        margin: auto;
+        #inputs{
+            border-bottom: 1px solid;
+            padding-bottom: .5rem;
+            #email{
+                background: transparent;
+                border: none;
+                outline: none;
+                text-transform: initial;
+                &::placeholder{
+                    font-size: .5rem;
+                    text-transform: uppercase;
+                }
+            }
+            #submit{
+                font-size: .5rem;
+            }
+        }
+       #error{
+           font-size: .6rem;
+           margin-top: 1rem;
+           //display: none;
+        }
+    }
+}

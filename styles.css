@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lora', serif;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 4px;
+}
+
+body {
+  height: 100vh;
+  text-align: center;
+  background-image: url(./salvador-escalante-EfjlkpoGjs4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+button, #submit {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  margin-top: 3rem;
+}
+
+header h2 {
+  font-size: .6rem;
+  margin-top: .5rem;
+}
+
+#countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+#countdown .count {
+  font-size: 1.2rem;
+}
+
+button {
+  text-decoration: underline;
+  margin-top: 2rem;
+}
+
+#modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#modal #close {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#modal form {
+  margin: auto;
+}
+
+#modal form #inputs {
+  border-bottom: 1px solid;
+  padding-bottom: .5rem;
+}
+
+#modal form #inputs #email {
+  background: transparent;
+  border: none;
+  outline: none;
+  text-transform: initial;
+}
+
+#modal form #inputs #email::-webkit-input-placeholder {
+  font-size: .5rem;
+  text-transform: uppercase;
+}
+
+#modal form #inputs #email:-ms-input-placeholder {
+  font-size: .5rem;
+  text-transform: uppercase;
+}
+
+#modal form #inputs #email::-ms-input-placeholder {
+  font-size: .5rem;
+  text-transform: uppercase;
+}
+
+#modal form #inputs #email::placeholder {
+  font-size: .5rem;
+  text-transform: uppercase;
+}
+
+#modal form #inputs #submit {
+  font-size: .5rem;
+}
+
+#modal form #error {
+  font-size: .6rem;
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */

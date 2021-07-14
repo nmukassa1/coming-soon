@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <h1>Coming soon</h1>
+        <h2>It's only a matter of time</h2>
+    </header>
+
+    <section id="countdown">
+        <div class="days count">
+            d
+            <div class="number">60</div>
+        </div>
+        <div class="hrs count">
+            h
+            <div class="number">60</div>
+        </div>
+        <div class="mins count">
+            m
+            <div class="number">60</div></div>
+        <div class="secs count">
+            s
+            <div class="number">60</div></div>
+    </section>
+
+    <button id="notified">Be notified when we open</button>
+
+    <div id="modal">
+        <button id="close">
+            <img src="/icon-close.svg" alt="x">
+        </button>
+        <form novalidate action="">
+            <div id="inputs">
+                <input required name="customers-email" id="email" type="email"placeholder="Email">
+                <input id="submit" type="submit" name="" >
+            </div>
+            <div id="error"></div>
+        </form>
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
