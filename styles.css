@@ -58,4 +58,15 @@ svg {
   font-size: 5rem;
   letter-spacing: 6px;
   opacity: 0.2;
+  position: relative;
+  text-align: center;
+}
+#reveal-3 h1::after {
+  content: "Coming Soon";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
