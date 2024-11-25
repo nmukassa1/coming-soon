@@ -23,7 +23,7 @@ tl
         skewX: 30.,
         scaleY: .9,
         opacity: 0,
-        delay: .4
+        delay: .6
     })
     .from(`#BY-NY .str1`, {
         yPercent:215,
